@@ -10,6 +10,15 @@ They are defined in [W3C's Expanded Color](https://www.w3.org/TR/css3-color/#svg
 
 # How to install
 
+```
+dependencies {
+    repositories {
+        jcenter()
+    }
+    
+    compile 'com.nobrain.android.colorparser:color-parser:1.0.0'
+}
+```
 
 
 # How to use
