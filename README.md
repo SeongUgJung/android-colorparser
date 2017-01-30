@@ -1,8 +1,8 @@
 # Android Color Parser
 
-Android `android.graphics.Color` has a fuction for parsing.
+Android `android.graphics.Color` has a function for color-parsing.
 
-but It supports basically [colors of w3c](https://www.w3.org/TR/css3-color/#html4).
+but It supports [basic colors of w3c](https://www.w3.org/TR/css3-color/#html4).
  
 This project is for supporting more color keywords.
 
