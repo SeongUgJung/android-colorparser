@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply from: "$rootDir/artifacts.gradle"
+
+group = "com.nobrain.android.colorparser"
+version = "1.0.0"
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 25
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    provided "com.android.support:support-core-utils:25.1.0"
+}
+
+
+install {
+    repositories.mavenInstaller.pom.project {
+        name "android-color-parser"
+        description "Parse from color name"
+        packaging "aar"
+        url "https://github.com/ZeroBrain/android-colorparser"
+
+        licenses {
+            license {
+                name 'The Apache Software License, Version 2.0'
+                url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+            }
+        }
+
+        scm {
+            url "scm:git:https://github.com/ZeroBrain/android-colorparser.git"
+            connection "scm:git:https://github.com/ZeroBrain/android-colorparser.git"
+        }
+
+        developers {
+            developer {
+                id 'steve.seongug.jung'
+                name 'Steve SeongUg Jung'
+            }
+        }
+    }
+}
