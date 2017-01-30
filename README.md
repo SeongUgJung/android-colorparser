@@ -14,6 +14,10 @@ They are defined in [W3C's Expanded Color](https://www.w3.org/TR/css3-color/#svg
 dependencies {
     repositories {
         jcenter()
+        // or
+        maven {
+            url  "http://dl.bintray.com/zerobrain/maven" 
+        }
     }
     
     compile 'com.nobrain.android.colorparser:color-parser:1.0.0'
