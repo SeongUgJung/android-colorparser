@@ -4,9 +4,7 @@ Android `android.graphics.Color` has a function for color-parsing.
 
 but It supports [basic colors of w3c](https://www.w3.org/TR/css3-color/#html4).
  
-This project is for supporting more color keywords.
-
-They are defined in [W3C's Expanded Color](https://www.w3.org/TR/css3-color/#svg-color)
+This project is for supporting more color keywords. It's based on [W3C's Expanded Color](https://www.w3.org/TR/css3-color/#svg-color)
 
 # How to install
 
@@ -28,7 +26,7 @@ dependencies {
 # How to use
 
 ```java
-// parsing hex code of lime, 0x00ff00
+// parsing lime or 0x00ff00
 ColorParser.parse("#FF00FF00"); 
 ColorParser.parse("#00FF00"); 
 ColorParser.parse("#F0F0");
